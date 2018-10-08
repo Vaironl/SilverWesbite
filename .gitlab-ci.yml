@@ -3,8 +3,6 @@ stages:
   - deploy
 
 build-job:
-  tags:
-    - 127773be
   stage: build
   script:
     - eval $(ssh-agent -t 5m -s)
