@@ -1,16 +1,15 @@
-#stages:
-#  - build
-#  - deploy
-#
-#
-#build-job:
-#  tags:
-#    - 127773be
-#  stage: build
-#  script:
+stages:
+  - build
+  - deploy
+
+build-job:
+  tags:
+    - 127773be
+  stage: build
+  script:
 #    - eval $(ssh-agent -t 5m -s)
 #    - ssh-add <(echo "$RSYNC_KEY")
 #    - rsync -auvz -e "ssh" build/reports/tests/ yourLoginName@atria.cs.odu.edu:GitLab1/
 #    - ssh-agent -k
-#  only:
-#    - master
+  only:
+    - master
