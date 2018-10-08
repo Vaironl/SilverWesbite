@@ -9,7 +9,7 @@ build-job:
   script:
     - eval $(ssh-agent -t 5m -s)
     - ssh-add <(echo "$RSYNC_KEY")
-#    - rsync -auvz -e "ssh" build/reports/tests/ yourLoginName@atria.cs.odu.edu:GitLab1/
-#    - ssh-agent -k
+    - rsync -auvz -e "ssh" ./index.html 410silver@atria.cs.odu.edu:public_html/
+    - ssh-agent -k
   only:
     - master
