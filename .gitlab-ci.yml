@@ -4,7 +4,7 @@ stages:
   
 build-job:
   tags:
-    - "build"
+    - build
   stage: build
   script:
     - ls -l
