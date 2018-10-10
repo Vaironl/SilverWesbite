@@ -1,0 +1,12 @@
+stages:
+  - build
+  - deploy
+ 
+build-job:
+  tags:
+    - build
+  stage: build
+  script:
+    - ls -lah
+    - echo "This is just a test"
+
