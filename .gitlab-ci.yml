@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+  
+build-job:
+  tags:
+    - "build"
+  stage: build
+  script:
+    - ls -l
+    - echo "listing files"
+  only:
+    - master
+
+# deploy-job:
+#   tags:
+#     - "placeholder"
+#   stage: deploy
+#   script:
+#     - eval $(ssh-agent -t 5m -s)
+#     - ssh-add <(echo "$RSYNC_KEY")
+#     - rsync -auvz -e "ssh" ./index.html 410silver@atria.cs.odu.edu:public_html/
+#     - ssh-agent -k
+#   only:
+#     - master
