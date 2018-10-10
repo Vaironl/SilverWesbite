@@ -8,7 +8,7 @@ build-job:
   stage: build
   script:
     - ls -l
-    echo "listing files"
+    - echo "listing files"
   only:
     - master
 
