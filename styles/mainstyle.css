@@ -4,7 +4,7 @@ body {
     color: #5a5a5a;
 }
 
-.pricing-header {
-    height: 30vh;
-    margin-top: 15vh;
+.pricing-header{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
