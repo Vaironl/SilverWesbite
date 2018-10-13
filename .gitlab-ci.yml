@@ -14,14 +14,15 @@ build-job:
     - master
     - developer
 
-# deploy-job:
-#   tags:
-#     - "placeholder"
-#   stage: deploy
-#   script:
-#     - eval $(ssh-agent -t 5m -s)
-#     - ssh-add <(echo "$RSYNC_KEY")
-#     - rsync -auvz -e "ssh" ./index.html 410silver@atria.cs.odu.edu:public_html/
-#     - ssh-agent -k
-#   only:
-#     - master
+deploy-job:
+  tags:
+    - 410silver
+  stage: deploy
+  script:
+    - eval $(ssh-agent -t 5m -s)
+    - ssh-add <(echo "$RSYNC_KEY")
+    - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:./public/
+    - ssh-agent -k
+  only:
+    - master
+    - developer
