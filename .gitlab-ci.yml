@@ -4,11 +4,12 @@ stages:
   
 build-job:
   tags:
-    - build
+    - 410silver
   stage: build
   script:
-    - ls -l
     - echo "listing files"
+    - ls -l
+    
   only:
     - master
 
