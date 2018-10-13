@@ -21,7 +21,8 @@ deploy-job:
   script:
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$RSYNC_KEY")
-    - rsync -auvz -e "ssh"./index.html nmendoza@atria.cs.odu.edu:public/
+    -ls
+    #- rsync -auvz -e "ssh"./index.html nmendoza@atria.cs.odu.edu:public/
     - ssh-agent -k
   only:
     - master
