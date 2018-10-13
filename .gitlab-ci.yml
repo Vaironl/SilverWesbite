@@ -2,24 +2,32 @@ stages:
   - build
   - deploy
   
-build-job:
-  tags:
-    - build
-  stage: build
-  script:
-    - ls -l
-    - echo "listing files"
-  only:
-    - master
-
-# deploy-job:
+# build-job:
 #   tags:
-#     - "placeholder"
-#   stage: deploy
+#     - 410silver
+#   stage: build
 #   script:
-#     - eval $(ssh-agent -t 5m -s)
-#     - ssh-add <(echo "$RSYNC_KEY")
-#     - rsync -auvz -e "ssh" ./index.html 410silver@atria.cs.odu.edu:public_html/
-#     - ssh-agent -k
+#     - echo "listing files"
+#     - ls -l
+    
 #   only:
 #     - master
+#     - developer
+
+deploy-job:
+  tags:
+    - 410silver
+  stage: deploy
+  script:
+    - apt-get update
+    - apt-get --yes --force-yes install git
+    - git submodule update --init --recursive
+    # - eval $(ssh-agent -s)
+    # - ssh-add <(echo "$RSYNC_KEY")
+    # - ls
+    # - cat ~/.ssh/
+    # - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
+    # - ssh-agent -k
+  only:
+    - master
+    - developer
