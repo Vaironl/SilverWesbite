@@ -19,13 +19,11 @@ deploy-job:
     - 410silver
   stage: deploy
   script:
-    - echo "${SSH_PRIVATE_KEY}" > id_rsa
-    - chmod 700 id_rsa
-    - mkdir "${HOME}/.ssh"
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$RSYNC_KEY")
     - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
     - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
-    # - eval $(ssh-agent -s)
-    # - ssh-add <(echo "$RSYNC_KEY")
+    
     # - ls
     # - cat ~/.ssh/
     # - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
