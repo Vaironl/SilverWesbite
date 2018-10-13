@@ -19,9 +19,9 @@ deploy-job:
     - 410silver
   stage: deploy
   script:
-    - eval $(ssh-agent -t 5m -s)
+    - eval $(ssh-agent -s)
     - ssh-add <(echo "$RSYNC_KEY")
-    - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:./public/
+    - rsync -auvz -e "ssh"./index.html nmendoza@atria.cs.odu.edu:public/
     - ssh-agent -k
   only:
     - master
