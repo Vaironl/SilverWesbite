@@ -12,7 +12,7 @@ build-job:
     
   only:
     - master
-    -developer
+    - developer
 
 # deploy-job:
 #   tags:
