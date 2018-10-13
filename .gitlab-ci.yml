@@ -2,17 +2,17 @@ stages:
   - build
   - deploy
   
-build-job:
-  tags:
-    - 410silver
-  stage: build
-  script:
-    - echo "listing files"
-    - ls -l
+# build-job:
+#   tags:
+#     - 410silver
+#   stage: build
+#   script:
+#     - echo "listing files"
+#     - ls -l
     
-  only:
-    - master
-    - developer
+#   only:
+#     - master
+#     - developer
 
 deploy-job:
   tags:
@@ -22,7 +22,7 @@ deploy-job:
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$RSYNC_KEY")
     - ls
-    #- rsync -auvz -e "ssh"./index.html nmendoza@atria.cs.odu.edu:public/
+    - rsync -auvz -e "ssh"./index.html nmendoza@atria.cs.odu.edu:public/
     - ssh-agent -k
   only:
     - master
