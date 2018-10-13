@@ -20,8 +20,11 @@ deploy-job:
   stage: deploy
   script:
     - apt-get update
-    - apt-get --yes --force-yes install git
-    - git submodule update --init --recursive
+    - echo "${SSH_PRIVATE_KEY}" > id_rsa
+    - chmod 700 id_rsa
+    - mkdir "${HOME}/.ssh"
+    - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
+    - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
     # - eval $(ssh-agent -s)
     # - ssh-add <(echo "$RSYNC_KEY")
     # - ls
