@@ -19,11 +19,11 @@ deploy-job:
     - 410silver
   stage: deploy
   script:
-    - apt-get update
-    - apt-get --yes --force-yes install git
-    - git submodule update --init --recursive
-    # - eval $(ssh-agent -s)
-    # - ssh-add <(echo "$RSYNC_KEY")
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$RSYNC_KEY")
+    - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
+    - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
+    
     # - ls
     # - cat ~/.ssh/
     # - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
