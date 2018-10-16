@@ -1,0 +1,13 @@
+$bioImgSize: 40vh;
+$bioCardSize: 65vh;
+
+.bio-card
+{
+  min-height: $bioCardSize;
+  height-height: $bioCardSize;
+}
+
+.img-thumbnail {
+  height: $bioImgSize;
+  object-fit: cover;
+}
