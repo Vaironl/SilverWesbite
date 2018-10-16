@@ -9,5 +9,5 @@ $bioCardSize: 65vh;
 
 .img-thumbnail {
   height: $bioImgSize;
-  object-fit: cover;
+  object-fit: contain;
 }
