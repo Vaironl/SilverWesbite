@@ -1,10 +1,14 @@
 $bioImgSize: 40vh;
 $bioCardSize: 65vh;
 
-.bio-card
-{
+.bio-card {
   min-height: $bioCardSize;
-  height-height: $bioCardSize;
+  height: $bioCardSize;
+  max-height: $bioCardSize;
+}
+
+.scroll {
+  overflow-y: auto;
 }
 
 .img-thumbnail {

@@ -1,6 +1,11 @@
 .bio-card {
   min-height: 65vh;
-  height-height: 65vh;
+  height: 65vh;
+  max-height: 65vh;
+}
+
+.scroll {
+  overflow-y: auto;
 }
 
 .img-thumbnail {
