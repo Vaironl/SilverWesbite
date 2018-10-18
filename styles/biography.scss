@@ -1,17 +1,43 @@
 $bioImgSize: 40vh;
-$bioCardSize: 65vh;
+$bioCardSize: 78vh;
+$bioCardSizeRow2: 71vh;
+$bioCardSizeRow3: 74vh;
+$bioCardSizeRow4: 70vh;
+$bioCardSizeRow5: 60vh;
+$image-fit:scroll;
 
 .bio-card {
-  min-height: $bioCardSize;
   height: $bioCardSize;
-  max-height: $bioCardSize;
+}
+
+#row2 .bio-card{
+  height: $bioCardSizeRow2 !important;
+}
+
+#row3 .bio-card{
+  height: $bioCardSizeRow3 !important;
+}
+
+#row4 .bio-card{
+  height: $bioCardSizeRow4 !important;
+}
+
+#row5 .bio-card{
+  height: $bioCardSizeRow5 !important;
 }
 
 .scroll {
-  overflow-y: auto;
+  //overflow-y:scroll;
+}
+
+#row1{
 }
 
 .img-thumbnail {
   height: $bioImgSize;
   object-fit: contain;
+}
+
+.card-text{
+  margin-top: 1vh;
 }
