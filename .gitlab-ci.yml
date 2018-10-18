@@ -4,7 +4,7 @@ stages:
   
 build-job:
   tags:
-    - build
+    - 410silver
   stage: build
   script:
     - ls -l
