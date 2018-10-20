@@ -24,8 +24,8 @@ deploy-job:
     # - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
     - ssh-keyscan www.cs.odu.edu
     - ssh nmendoza@atria.cs.odu.edu
-    - echo "${SSH_P}"
-    # - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
+    # - echo "${SSH_P}"
+    - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
     
     # - ls
     # - cat ~/.ssh/
