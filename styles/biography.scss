@@ -8,6 +8,7 @@ $image-fit:scroll;
 
 .bio-card {
   height: $bioCardSize;
+  overflow: hidden;
 }
 
 #row2 .bio-card{
@@ -27,7 +28,7 @@ $image-fit:scroll;
 }
 
 .scroll {
-  //overflow-y:scroll;
+  overflow-y:scroll;
 }
 
 #row1{

@@ -1,5 +1,6 @@
 .bio-card {
   height: 78vh;
+  overflow: hidden;
 }
 
 #row2 .bio-card {
@@ -16,6 +17,10 @@
 
 #row5 .bio-card {
   height: 60vh !important;
+}
+
+.scroll {
+  overflow-y: scroll;
 }
 
 .img-thumbnail {
