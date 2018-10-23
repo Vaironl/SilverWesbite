@@ -21,7 +21,10 @@ deploy-job:
   script:
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$RSYNC_KEY")
-    - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
+    # - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
+    - ssh-keyscan www.cs.odu.edu
+    - ssh nmendoza@atria.cs.odu.edu
+    # - echo "${SSH_P}"
     - rsync -auvz -e "ssh" ./index.html nmendoza@atria.cs.odu.edu:public/
     
     # - ls
