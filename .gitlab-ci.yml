@@ -7,7 +7,6 @@ build-job:
     - 410silver
   stage: build
   script:
-    - ls -l
     - echo "transferring files"
     - eval $(ssh-agent -t 5m -s)
     - ssh-add <(echo "$RSYNC_KEY")
