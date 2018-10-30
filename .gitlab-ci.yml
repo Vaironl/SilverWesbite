@@ -3,7 +3,7 @@ stages:
   - deploy
   
 build-job:
-  tags:
+  tags: 410silver
   stage: build
   script:
     - ls -l
