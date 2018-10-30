@@ -10,7 +10,9 @@ build-job:
     - echo "transferring files"
     - eval $(ssh-agent -t 5m -s)
     - ssh-add <(echo "$RSYNC_KEY")
-    - rsync -auvz -e "ssh" ./index.html 410silver@atria.cs.odu.edu:test/
+    #- rsync -auvz -e "ssh -i $HOME/.ssh/runnerkey" ./_index.md 410silver@atria.cs.odu.edu:./
+    - rsync -auvz -e ssh ./ 410silver@atria.cs.odu.edu:./
+    #- rsync -auz -e ssh ./ zeil@atria:ivyrepo/edu.odu.cs.zeil/programmingFAQs/1.2/
     - ssh-agent -k
   only:
     - master
