@@ -4,11 +4,6 @@ stages:
   
 build-job:
   tags:
-<<<<<<< HEAD
-    - "build"
-=======
-    - 410silver
->>>>>>> Update .gitlab-ci.yml
   stage: build
   script:
     - ls -l
