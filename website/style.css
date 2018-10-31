@@ -837,6 +837,7 @@ p {
 
 .pricing-plane-area {
     background: #f5f9fc;
+    min-height: 80vh;
 }
 
 .single-price-plan {
@@ -1310,7 +1311,7 @@ section {
 }
 
 .active .nav-link {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 #presentation, #deliverables, #references {
@@ -1329,4 +1330,9 @@ section {
 #google_slides iframe {
     height: 100%;
     width: 100%;
+}
+
+{
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

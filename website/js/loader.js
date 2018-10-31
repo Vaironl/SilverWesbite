@@ -9,7 +9,7 @@ $(document).ready(function () {
         "    <!-- Foooter Text-->\n" +
         "    <div class=\"copyright-text\">\n" +
         "        <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->\n" +
-        "        <p>Copyright ©2017 Ca. Designed by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a></p>\n" +
+        "        <p>Copyright ©2018 Crimemapping | <a target='_blank' href='https://www.odu.edu/'>ODU</a> | <a target='_blank' href='https://www.odu.edu/compsci'>Dept. of Computer Science </a> | Designed by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a></p>\n" +
         "    </div>\n" +
         "</footer>";
 
