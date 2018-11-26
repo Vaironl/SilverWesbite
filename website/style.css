@@ -1,4 +1,4 @@
-/* --------------------------
+﻿/* --------------------------
 :: Template Name: Colorlib App - App Landing Page 
 :: Template Author: Colorlib
 :: Template Author URI: https://colorlib.com/
@@ -1332,12 +1332,7 @@ section {
     width: 100%;
 }
 
-.dropdown-menu{
-    margin-top: -30px;
-    background-color: rgba(159, 188, 208,0.4);
-    border:1px solid rgba(255,255,255,0.3);
-}
-
-.dropdown-menu a{
-    color:white;
+{
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

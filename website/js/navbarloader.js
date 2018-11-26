@@ -16,9 +16,11 @@ $(document).ready(function () {
         "                            <ul class=\"navbar-nav ml-auto\" id=\"nav\">\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./index.html\">Home</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./biography.html\">Biography</a></li>\n" +
-        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./presentation.html\">Presentation</a></li>\n" +
+        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./presentation.html\">Presentations</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./deliverables.html\">Deliverables</a></li>\n" +
+		"                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./userstories.html\">User Stories</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./references.html\">References</a></li>\n" +
+		"								 <li class=\"nav-item\"><a class=\"nav-link\" href=\"./downloads.html\">Downloads</a></li>\n" +
         "                            </ul>\n" +
         "                        </div>\n" +
         "                    </nav>\n" +

@@ -56,13 +56,16 @@
 				<div class="jumbotron text-left"
                     <li>
 					<h2>Website User</h2>
+					</li>
                         <p>
                             A Website User is a consumer that accesses the program via the Website.
 
                         </p>
 						<p>
 						Main Paths:<br>
-
+						<ol>
+						<li>
+		
 						1. A Website user opens the website to research the crime levels in an area.<br>
 						2. The website requests access to the user’s  location.<br>
 
@@ -72,12 +75,14 @@
 						5. The User identifies areas of concern based on the colors displayed.<br>
 
 						6. The User hovers the pointer over areas of interest and receives numeric statistics of the crimes that contributes to the score.<br><br>
+						</li></ol> 
+						
 						
 						<b>User Stories:</b><br>
-							
-							As a Website User I would like to enter the zip code of the location of interest.<br>
+							<ul class="a">
+							<li>As a Website User I would like to enter the zip code of the location of interest.</li><br>
 							As a Website User I would like to see a street map of the area of interest.<br>
-							As a Website User I would like to see a heat map layer on the street map indicating the safety of an area.<br>
+							As a Website User I would like to see a heat map layer on the street map indicating the safety of an area.<br>
 							As a Website User, I would like to be able view crime reports and local news to the address I have provided on a separate tab.<br>
 							As a Website User, I would like to be presented computation statistics when hovering the pointer over an area.<br>
 							As a Website User, I would like to be notified if the database has no crime data for an area.<br>
@@ -91,7 +96,7 @@
 							As a Website User, I would like the ability to filter out crimes based on time of day.<br>
 						</p>
 						
-                    </li>
+						</li></ul> 
                     <li>
 					<h2>Mobile Application User</h2>
                         <p>
@@ -119,7 +124,7 @@
 							As an Application User, I would like the ability to filter out crimes based on time of day.<br>
 							As an Application User, I want to be able to identify the levels of danger I am comfortable with.<br>
 							As an Application User, I want to be able to assign weights to crimes that are most relevant to me.<br>
-							As an Application User, I want the application to track my current safety state.<br>
+							As an Application User, I want the application to track my current safety state<br>
 							As an Application User, I want the application to alert me when my current safety state changes.<br>
 							As an Application User, I want to be notified if the application doesn’t have the data needed to track my safety.<br>
 
@@ -137,17 +142,17 @@
 							1. The administrator accesses the database webpage.<br>
 							2. The administrator signs in.<br>
 							3. The administrator selects a .csv file from his or her local machine to submit.<br>
-							4. The system validates the .csv file.<br>
+							4. The system validates the .csv file<br>
 							5. The system notifies the administrator that the file is accepted.<br>
 							6. The administrator logs off.<br>
 							7. The system updates the database with new entries for non-duplicate data.<br><br>
 							
 							<b>User Stories:</b><br>
                         
-                            As an Administrator I want to securely log into the website.<br>
-							As an Administrator I want to submit crimes data in .csv format.<br>
-							As an Administrator I want my submitted data to be validated and the result returned.<br>
-							As an Administrator I want the system to automatically ignore line items in the .csv file that would result in duplicate entries.  <br><br>
+                            As an administrator I want to securely log into the website.<br>
+							As an administrator I want to submit crimes data in .csv format<br>
+							As an administrator I want my submitted data to be validated and the result returned.<br>
+							As an administrator I want the system to automatically ignore line items in the .csv file that would result in duplicate entries.  <br><br>
 
                         </p>
                     </li>
