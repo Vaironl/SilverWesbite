@@ -17,7 +17,22 @@ $(document).ready(function () {
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./index.html\">Home</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./biography.html\">Biography</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./presentation.html\">Presentations</a></li>\n" +
-        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./deliverables.html\">Deliverables</a></li>\n" +
+        "<div class=\"btn-group\">\n" +
+        "                                    <a id=\"dropdown-link\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
+        "                                        Deliverables\n" +
+        "                                    </a>\n" +
+        "                                    <div class=\"dropdown-menu\">\n" +
+        "                                        <a class=\"dropdown-item\" href=\"./userstories.html\">User Stories</a>\n" +
+        "                                        <!--<div class=\"dropdown-divider\"></div>-->\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">MFCD</a>\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">Process Flow</a>\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">Solution Flow</a>\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">Algorithms</a>\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">Prototype MFCD</a>\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">Risks</a>\n" +
+        "                                        <a class=\"dropdown-item\" href=\"#\">WBS</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>" +
 		"                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./userstories.html\">User Stories</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./references.html\">References</a></li>\n" +
 		"								 <li class=\"nav-item\"><a class=\"nav-link\" href=\"./downloads.html\">Downloads</a></li>\n" +
