@@ -1346,3 +1346,9 @@ section {
 .dropdown-menu a{
     color:white;
 }
+
+.bio-card{
+    height: 90vh;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
