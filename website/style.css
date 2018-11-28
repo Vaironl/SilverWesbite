@@ -1319,7 +1319,7 @@ section {
     /*text-decoration: underline;*/
 }
 
-#presentation, #deliverables, #references {
+#presentation, #deliverables, #references, #downloads {
     margin-top: 200px;
 }
 
@@ -1353,6 +1353,3 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#downloads{
-    margin-top: 15vh;
-}
