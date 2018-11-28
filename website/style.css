@@ -1288,9 +1288,14 @@ p {
 
 /*CS 410 | Team Silver Custom CSS*/
 
+.sub-list {
+    padding-left: 20px;
+}
+
 .references li {
     list-style-type: square;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    list-style-type: none;
 }
 
 .references li p {
@@ -1331,11 +1336,6 @@ section {
     height: 100%;
     width: 100%;
 }
-
-/*{*/
-    /*-webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);*/
-    /*box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);*/
-/*}*/
 
 .dropdown-menu{
     margin-top: -30px;
