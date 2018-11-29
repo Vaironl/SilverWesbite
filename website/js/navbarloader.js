@@ -32,10 +32,11 @@ $(document).ready(function () {
         "                                        <a class=\"dropdown-item\" href=\"./risks.html\">Risks</a>\n" +
         "                                        <a class=\"dropdown-item\" href=\"./wbs.html\">WBS</a>\n" +
         "                                    </div>\n" +
-        "                                </div>"+
-		"                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./userstories.html\">User Stories</a></li>\n" +
+        "                                </div>" +
+        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./userstories.html\">User Stories</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./references.html\">References</a></li>\n" +
-		"								 <li class=\"nav-item\"><a class=\"nav-link\" href=\"./downloads.html\">Downloads</a></li>\n" +
+        "<li class=\"nav-item\"><a class=\"nav-link\" href=\"./glossary.html\">Glossary</a></li>" +
+        "								 <li class=\"nav-item\"><a class=\"nav-link\" href=\"./downloads.html\">Downloads</a></li>\n" +
         "                            </ul>\n" +
         "                        </div>\n" +
         "                    </nav>\n" +
