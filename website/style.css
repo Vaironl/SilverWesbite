@@ -1367,7 +1367,7 @@ section {
     padding:0;
 }
 
-#WBS img, .container img
+#WBS img, #references .container img
 {
     border:2px solid gray;
     border-radius: 10px;
