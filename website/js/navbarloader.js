@@ -35,7 +35,7 @@ $(document).ready(function () {
         "                                </div>" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./references.html\">References</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./glossary.html\">Glossary</a></li>" +
-        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./glossary.html\">About_Us</a></li>" +
+        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./About_Us.html\">About Us</a></li>" +
         "								 <li class=\"nav-item\"><a class=\"nav-link\" href=\"./downloads.html\">Downloads</a></li>\n" +
         "                            </ul>\n" +
         "                        </div>\n" +
