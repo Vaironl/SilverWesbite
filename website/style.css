@@ -1287,6 +1287,10 @@ p {
 }
 
 /*CS 410 | Team Silver Custom CSS*/
+.navbar-brand
+{
+    font-size: 2.5em !important;
+}
 
 .sub-list {
     padding-left: 20px;

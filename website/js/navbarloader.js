@@ -17,6 +17,7 @@ $(document).ready(function () {
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./index.html\">Home</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./biography.html\">Biography</a></li>\n" +
         "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./presentation.html\">Presentations</a></li>\n" +
+        "                                <li class=\"nav-item\"><a class=\"nav-link\" href=\"./labs.html\">Labs</a></li>\n" +
         " <div class=\"btn-group\">\n" +
         "                                    <a id=\"dropdown-link\" class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
         "                                        Deliverables\n" +
