@@ -1297,7 +1297,6 @@ p {
 }
 
 .references li {
-    list-style-type: square;
     margin-bottom: 20px;
     list-style-type: none;
 }
@@ -1317,10 +1316,6 @@ section {
 
 #risk-img {
     margin-left: 5%;
-}
-
-.active .nav-link {
-    /*text-decoration: underline;*/
 }
 
 #presentation, #deliverables, #references, #downloads {
@@ -1352,9 +1347,15 @@ section {
 }
 
 .bio-card{
+    max-height: 90vh;
     height: 90vh;
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bio-card:hover{
+    overflow: scroll;
 }
 
 #handout{
