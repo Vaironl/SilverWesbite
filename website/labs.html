@@ -23,6 +23,8 @@
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
 
+    <!--Jquery UI needed for tab views to work-->
+    <script href="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -59,35 +61,74 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <!-- Heading Text -->
-                <div class="title text-left">
-                    <h2>Collaborative Outline</h2>
-                    <div class="line-shape"></div>
+                <ul class='tabs col-12 text-center'>
+                    <li class="d-inline"><a href='#tab1'>
+                        <button class="btn btn-primary">Collaborative</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab2'>
+                        <button class="btn btn-primary">Dave</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab3'>
+                        <button class="btn btn-primary">G-Man</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab4'>
+                        <button class="btn btn-primary">Kevin</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab5'>
+                        <button class="btn btn-primary">Raphael</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab6'>
+                        <button class="btn btn-primary">Thom</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab7'>
+                        <button class="btn btn-primary">Stephanie</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab8'>
+                        <button class="btn btn-primary">Kenneth</button>
+                    </a></li>
+                    <li class="d-inline"><a href='#tab9'>
+                        <button class="btn btn-primary">Vairon</button>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-12">
+                <div id='tab1'>
+                    <div class="row border">
+                        <!-- Single Feature Start -->
+                        <iframe class="w-100" height="800px" src="https://docs.google.com/document/d/e/2PACX-1vRqVyci0xaOuizrQkaCRCtc5B_8d2_lfawV-ALrMsuQczVctdzc8asdOf0_YNLqhBOjprA1iILTNiZX/pub?embedded=true"></iframe>
+                    </div>
+                </div>
+                <div id='tab2'>
+                    <p>This is the 2nd tab.</p>
+                </div>
+                <div id='tab3'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
+                <div id='tab4'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
+                <div id='tab5'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
+                <div id='tab6'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
+                <div id='tab7'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
+                <div id='tab8'>
+                    <p>And this is the 3rd tab.</p>
+                </div>
+                <div id='tab9'>
+                    <p>And this is the 3rd tab.</p>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-12 col-lg-12">
-                <object id="handout" data="./CollaborativeOutline.pdf" type="application/pdf">
-                    <embed src="./CollaborativeOutline.pdf" type="application/pdf"/>
-                </object>
-            </div>
-        </div>
 
-        <div>
-            <div class="col-12 col-sm-12 col-lg-12 text-center">
-                <h5>
-                    Please
-                    <a target="_blank" href="./CollaborativeOutline.pdf" download>
-                        click here!
-                    </a>
-                    to download our handout as PDF.
-                </h5>
-            </div>
-        </div>
     </div>
+
+
 </section>
 <!-- ***** References End ***** -->
 
@@ -112,6 +153,8 @@
 <!-- Footer & Nav Sections Loader JS -->
 <script src="js/loader.js"></script>
 <script src="js/navbarloader.js"></script>
+<script src="js/tabs.js"></script>
+
 </body>
 
 </html>
